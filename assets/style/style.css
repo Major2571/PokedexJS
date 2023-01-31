@@ -10,7 +10,7 @@ html {
 
 body {
     background-image: linear-gradient(0deg, #ffffff99, #ffffff99), url(https://major2571.github.io/PokedexJS/assets/img/pokemons-bg.jpg);
-    
+
 }
 
 body::-webkit-scrollbar {
@@ -35,7 +35,7 @@ body::-webkit-scrollbar-thumb {
 
 .content h1 img {
     width: 0.75em;
-    filter: drop-shadow(0px 7px 2px rgba(66, 64, 64, 0.445));
+    filter: drop-shadow(0px 7px 2px rgba(66, 64, 64, 0.35));
 }
 
 .content h1 {
@@ -47,7 +47,7 @@ body::-webkit-scrollbar-thumb {
     font-size: clamp(3em, 3.3em, 4.5em);
     letter-spacing: 1px;
     color: #444;
-    text-shadow: 0px 4px 3px rgba(66, 64, 64, 0.5);
+    text-shadow: 0px 4px 3px rgba(66, 64, 64, 0.35);
 }
 
 .content h1::after {
@@ -88,8 +88,39 @@ body::-webkit-scrollbar-thumb {
 
 }
 
+#toTopButton {
+    display: none;
+    position: fixed;
+    bottom: 3.5vh;
+    right: 3.5vh;
+    z-index: 10;
+    outline: none;
+    border: 3px solid #444;
+    background-color: rgba(255, 255, 255, 0.233);
+    cursor: pointer;
+    border-radius: 100%;
+    width: 6vh;
+    height: 6vh;
+    filter: drop-shadow(1px 1px 3px rgba(134, 134, 134, 0.644));
+}
+
+#toTopButton img {
+    width: 100%;
+    align-items: center;
+}
+
+#toTopButton:hover {
+    transition: all .3s ease;
+    background-color: rgba(233, 85, 81, 1.0);
+}
+
+#toTopButton img:hover {
+    transition: all .3s ease;
+    filter: brightness(10);
+}
+
 footer {
-    height: 5em;
+    height: 3em;
 }
 
 @media screen and (min-width: 995px) {

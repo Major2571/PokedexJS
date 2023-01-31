@@ -1,5 +1,5 @@
 div.normal {
-    background: linear-gradient(220deg, rgba(203,152,167,1.0) 0%, rgba(116,81,91,1.0) 100%);
+    background: linear-gradient(220deg, rgba(203, 152, 167, 1.0) 0%, rgba(116, 81, 91, 1.0) 100%);
 }
 
 div.grass {
@@ -7,11 +7,11 @@ div.grass {
 }
 
 div.fire {
-    background: linear-gradient(220deg, rgba(247,127,0,1.0) 0%, rgba(214,40,40,1.0) 100%);
+    background: linear-gradient(220deg, rgba(247, 127, 0, 1.0) 0%, rgba(214, 40, 40, 1.0) 100%);
 }
 
 div.water {
-    background: linear-gradient(220deg, rgba(134,168,252,1.0) 0%, rgba(21,82,226,1.0) 100%);
+    background: linear-gradient(220deg, rgba(134, 168, 252, 1.0) 0%, rgba(21, 82, 226, 1.0) 100%);
 
 }
 
@@ -24,51 +24,52 @@ div.ice {
 }
 
 div.ground {
-    background: linear-gradient(220deg, rgba(169,112,44,1.0) 0%, rgba(110,73,31,1.0) 100%);
+    background: linear-gradient(220deg, rgba(169, 112, 44, 1.0) 0%, rgba(110, 73, 31, 1.0) 100%);
 }
 
 div.flying {
-    background: linear-gradient(220deg, rgba(193,138,255,1.0) 0%, rgba(233,69,255,1.0) 100%);
+    background: linear-gradient(220deg, rgba(193, 138, 255, 1.0) 0%, rgba(233, 69, 255, 1.0) 100%);
 }
 
 div.poison {
-    background: linear-gradient(220deg, rgba(178,115,255,1.0) 0%, rgba(94,45,136,1.0) 100%);
+    background: linear-gradient(220deg, rgba(178, 115, 255, 1.0) 0%, rgba(94, 45, 136, 1.0) 100%);
 }
 
 div.fighting {
-    background: linear-gradient(220deg, rgba(239,97,56,1.0) 0%, rgba(153,64,37,1.0) 100%);
+    background: linear-gradient(220deg, rgba(239, 97, 56, 1.0) 0%, rgba(153, 64, 37, 1.0) 100%);
 }
 
 div.psychic {
-    background: linear-gradient(220deg, rgba(248,28,145,1.0) 0%, rgba(163,43,108,1.0) 100%);
+    background: linear-gradient(220deg, rgba(248, 28, 145, 1.0) 0%, rgba(163, 43, 108, 1.0) 100%);
 }
 
 div.dark {
-    background: linear-gradient(220deg, rgba(90,89,121,1.0) 0%, rgba(4,7,6,1.0) 100%);
+    background: linear-gradient(220deg, rgba(90, 89, 121, 1.0) 0%, rgba(4, 7, 6, 1.0) 100%);
 }
 
 div.rock {
-    background: linear-gradient(220deg, rgba(139,62,33,1.0) 0%, rgba(72,24,11,1.0) 100%);
+    background: linear-gradient(220deg, rgba(139, 62, 33, 1.0) 0%, rgba(72, 24, 11, 1.0) 100%);
 }
 
 div.bug {
-    background: linear-gradient(220deg, rgba(59,153,80,1.0) 0%, rgba(28,75,39,1.0) 100%);
+    background: linear-gradient(220deg, rgba(59, 153, 80, 1.0) 0%, rgba(28, 75, 39, 1.0) 100%);
 }
 
 div.ghost {
-    background: linear-gradient(220deg, rgba(144,103,144,1.0) 0%, rgba(51,51,107,1.0) 100%);
+    background: linear-gradient(220deg, #615795 0%, #2b2736 100%);
 }
 
 div.steel {
-    background: linear-gradient(220deg, rgba(66,189,148,1.0) 0%, rgba(95,117,109,1.0) 100%);
+    background: linear-gradient(220deg, rgb(222 227 227) 0%, rgb(108 108 108) 100%);
+    ;
 }
 
 div.dragon {
-    background: linear-gradient(220deg, rgba(97,202,217,1.0) 0%, rgba(68,139,149,1.0) 100%);
+    background: linear-gradient(220deg, #301c57 0%, #575f9d 100%);
 }
 
 div.fairy {
-    background: linear-gradient(220deg, rgba(234,19,105,1.0) 0%, rgba(149,26,68,1.0) 100%);
+    background: linear-gradient(220deg, rgba(234, 19, 105, 1.0) 0%, rgba(149, 26, 68, 1.0) 100%);
 }
 
 
@@ -78,15 +79,15 @@ li.normal {
 }
 
 li.grass {
-    background-color: rgba(55,163,5,1.0);
+    background-color: rgba(55, 163, 5, 1.0);
 }
 
 li.fire {
-    background-color: rgba(238,127,48,1.0);
+    background-color: rgba(238, 127, 48, 1.0);
 }
 
 li.water {
-    background-color: rgba(103,143,238,1.0);
+    background-color: rgba(103, 143, 238, 1.0);
 }
 
 li.electric {
@@ -118,11 +119,11 @@ li.psychic {
 }
 
 li.dark {
-    background-color: rgba(114,88,71,1.0);
+    background-color: rgba(114, 88, 71, 1.0);
 }
 
 li.rock {
-    background-color: rgba(184,161,55,1.0);
+    background-color: rgba(184, 161, 55, 1.0);
 }
 
 li.bug {
@@ -130,15 +131,15 @@ li.bug {
 }
 
 li.ghost {
-    background-color: rgba(110,88,150,1.0);
+    background-color: rgba(110, 88, 150, 1.0);
 }
 
 li.steel {
-    background-color: rgba(185,183,207,1.0);
+    background-color: rgb(185, 181, 181);
 }
 
 li.dragon {
-    background-color: rgba(111,56,246,1.0);
+    background-color: #7760e2;
 }
 
 li.fairy {
