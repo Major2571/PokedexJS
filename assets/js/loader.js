@@ -1,7 +1,7 @@
 let time;
 
 function functionTime() {
-    time = setTimeout(showPage, 1000);
+    time = setTimeout(showPage, 1500);
 }
 
 function showPage() {
