@@ -24,9 +24,6 @@
     box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.2);
 }
 
-
-
-
 .pokemon-card::after {
     animation: none;
 }
@@ -83,7 +80,3 @@
     z-index: 2;
     filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.445));
 }
-
-
-
-
