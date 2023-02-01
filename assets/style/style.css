@@ -136,8 +136,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .input-container .poke-search {
-    width: clamp(20em, 25vw, 30vw);
-    height: 5vh;
+    width: clamp(15em, 25vw, 30vw);
+    height: 2.8em;
     padding: 0.84em;
     font-weight: 400;
     font-size: clamp(8px, 5vw, 1rem);
@@ -148,7 +148,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .input-container .img-search {
-    height: 5vh;
+    height: 2.8em;
     padding: 0.45em 1.2em;
     z-index: -99;
     border: 2px solid var(--grey);
@@ -159,7 +159,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .input-container .img-search img {
-    width: 2.5vh;
+    max-width: 2.5vh;
     position: relative;
     top: 1px;
     filter: brightness(10);
