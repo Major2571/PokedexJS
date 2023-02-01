@@ -1,3 +1,9 @@
+:root {
+    --red: #e95551;
+    --grey: #444;
+    --white: #f8f4f4;
+}
+
 * {
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
@@ -33,12 +39,12 @@ body::-webkit-scrollbar-thumb {
     margin: auto;
 }
 
-.content h1 img {
+.title h1 img {
     width: 0.75em;
     filter: drop-shadow(0px 7px 2px rgba(66, 64, 64, 0.35));
 }
 
-.content h1 {
+.title h1 {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -46,18 +52,19 @@ body::-webkit-scrollbar-thumb {
     text-align: center;
     font-size: clamp(3em, 3.3em, 4.5em);
     letter-spacing: 1px;
-    color: #444;
+    color: var(--grey);
     text-shadow: 0px 4px 3px rgba(66, 64, 64, 0.35);
+    margin-top: 7vh;
 }
 
-.content h1::after {
+.title h1::after {
     content: "";
     position: absolute;
     display: inline-block;
     width: 3.5em;
     height: 6px;
-    background-color: rgba(233, 85, 81, 1.0);
-    top: 2.5em;
+    background-color: var(--red);
+    top: 1.4em;
 }
 
 .loadMore {
@@ -73,17 +80,17 @@ body::-webkit-scrollbar-thumb {
     padding: 0.7em 2.5em;
     font-size: 1.25em;
     border-radius: 3em;
-    border: 3px solid #444;
-    color: #444;
+    border: 3px solid var(--grey);
+    color: var(--grey);
     background: linear-gradient(120deg, #ffffff5c,
-            #ffffff5c, rgba(233, 85, 81, 1.0), rgba(233, 85, 81, 1.0));
+            #ffffff5c, var(--red), var(--red));
     background-size: 300% 150%;
     transition: all .5s;
 }
 
 .loadMore button:hover {
     transition: all 0.3s;
-    color: #fff;
+    color: var(--white);
     background-position: 100% 100%;
 
 }
@@ -95,7 +102,7 @@ body::-webkit-scrollbar-thumb {
     right: 3.5vh;
     z-index: 10;
     outline: none;
-    border: 3px solid #444;
+    border: 3px solid var(--grey);
     background-color: rgba(255, 255, 255, 0.233);
     cursor: pointer;
     border-radius: 100%;
@@ -111,7 +118,7 @@ body::-webkit-scrollbar-thumb {
 
 #toTopButton:hover {
     transition: all .3s ease;
-    background-color: rgba(233, 85, 81, 1.0);
+    background-color: var(--red);
 }
 
 #toTopButton img:hover {
@@ -119,15 +126,50 @@ body::-webkit-scrollbar-thumb {
     filter: brightness(10);
 }
 
+.input-container {
+    width: 100%;
+    height: 5vh;
+    margin: 5vh 0 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-container .poke-search {
+    width: clamp(20em, 25vw, 30vw);
+    height: 5vh;
+    padding: 0.84em;
+    font-weight: 400;
+    font-size: clamp(8px, 5vw, 1rem);
+    border: 2px solid var(--grey);
+    border-radius: 10px 0 0 10px;
+    box-shadow: -3px 4px 0 #e4e4e5;
+    outline: none;
+}
+
+.input-container .img-search {
+    height: 5vh;
+    padding: 0.45em 1.2em;
+    z-index: -99;
+    border: 2px solid var(--grey);
+    border-left: 0;
+    border-radius: 0 10px 10px 0;
+    background-color: var(--red);
+    box-shadow: -3px 4px 0 #e4e4e5;
+}
+
+.input-container .img-search img {
+    width: 2.5vh;
+    position: relative;
+    top: 1px;
+    filter: brightness(10);
+}
+
+.input-container input::placeholder {
+    color: #c0c0c0;
+}
+
 footer {
     height: 3em;
 }
 
-@media screen and (min-width: 995px) {
-    .content {
-        max-width: 80%;
-        height: auto;
-        margin: 0 auto;
-        border-radius: 1rem;
-    }
-}
