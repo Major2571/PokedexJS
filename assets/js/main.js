@@ -4,10 +4,8 @@ const loadMoreButton = document.getElementById('loadMoreButton');
 const limit = 55;
 let offset = 0;
 
-function loadPokemonItens(offset, limit) {
-
-    function convertPokemonToLi(pokemon) {
-        return `<div class="pokemon-card-container">
+function convertPokemonToLi(pokemon) {
+    return `<div class="pokemon-card-container">
                     <div class="pokemon-card ${pokemon.type}">
         
                         <div class="pokemon-card-bg">
@@ -19,19 +17,21 @@ function loadPokemonItens(offset, limit) {
         
                         <div class="details">
                             <ol class="types">
-                                ${pokemon.types.map((type) => `<li class="type ${type}">${type}</li>`).join('')}
+                                ${pokemon.types.map((type) => `<li class="type ${type}" data-filter="${type}">${type}</li>`).join('')}
                             </ol>
                             <img src="${pokemon.photo}" alt="${pokemon.name}">
                         </div>
         
                     </div>
                 </div>`;
-    }
+}
 
+
+function loadPokemonItens(offset, limit) {
     pokeApi.getPokemons(offset, limit).then((pokemons = []) => {
-        pokemonList.innerHTML += pokemons.map(convertPokemonToLi).join('');
-    });
-    
+        const newHtml = pokemons.map(convertPokemonToLi).join('')
+        pokemonList.innerHTML += newHtml
+    })
 }
 
 loadPokemonItens(offset, limit);
