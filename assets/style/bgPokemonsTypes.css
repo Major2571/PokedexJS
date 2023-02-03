@@ -180,11 +180,11 @@ li.fairy,
 button.fairy {
     background-color: rgb(237 91 147);
     border: 2px solid  rgb(237 91 147);
-    border: 2px solid rgb(237 91 147);
 }
 
 button.all {
     background-color: var(--grey);
+    border: 2px solid var(--grey);
 }
 
 

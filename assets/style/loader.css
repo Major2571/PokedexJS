@@ -1,44 +1,13 @@
-#loader {
-    font-size: 1.2rem;
-    position: relative;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    height: 100vh;
-    justify-content: center;
-}
+@keyframes animatebottom {
+    from {
+        bottom: -100px;
+        opacity: 0
+    }
 
-#loader .balls {
-    margin-top: -1em;
-}
-
-.balls div {
-    display: inline-block;
-    background-color: #000000;
-    width: 10px;
-    height: 10px;
-    border-radius: 100%;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    animation-name: animatedBalls;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-
-}
-
-.balls div:nth-child(1) {
-    animation-duration: 0.75s;
-    animation-delay: 0;
-}
-
-.balls div:nth-child(2) {
-    animation-duration: 0.75s;
-    animation-delay: 0.12s;
-}
-
-.balls div:nth-child(3) {
-    animation-duration: 0.75s;
-    animation-delay: 0.24s;
+    to {
+        bottom: 0;
+        opacity: 1
+    }
 }
 
 @keyframes animatedBalls {
@@ -61,11 +30,56 @@
     }
 }
 
+#mainPage {
+    display: none;
+}
+
+#loader {
+    font-size: 1.2rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+}
+
+#loader .balls {
+    margin-top: -1em;
+}
+
+#loader .balls div {
+    display: inline-block;
+    background-color: #000000;
+    width: 0.5em;
+    height: 0.5em;
+    border-radius: 100%;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-name: animatedBalls;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#loader .balls div:nth-child(1) {
+    animation-duration: 0.75s;
+    animation-delay: 0;
+}
+
+#loader .balls div:nth-child(2) {
+    animation-duration: 0.75s;
+    animation-delay: 0.12s;
+}
+
+#loader .balls div:nth-child(3) {
+    animation-duration: 0.75s;
+    animation-delay: 0.24s;
+}
+
 #loader img {
     max-width: 5em;
     margin-top: 1em;
 }
-
 
 .animate-bottom {
     position: relative;
@@ -73,18 +87,3 @@
     animation-duration: 1s;
 }
 
-@keyframes animatebottom {
-    from {
-        bottom: -100px;
-        opacity: 0
-    }
-
-    to {
-        bottom: 0;
-        opacity: 1
-    }
-}
-
-#divBottom {
-    display: none;
-}
