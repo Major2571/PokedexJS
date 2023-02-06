@@ -1,8 +1,8 @@
 const pokemonList = document.getElementById('pokemonList');
 const loadMoreButton = document.getElementById('loadMoreButton');
 
-const limit = 55;
 let offset = 0;
+let limit = 151;
 
 function convertPokemonToLi(pokemon) {
     return `<div class="pokemon-card-container">
@@ -25,7 +25,6 @@ function convertPokemonToLi(pokemon) {
                     </div>
                 </div>`;
 }
-
 
 function loadPokemonItens(offset, limit) {
     pokeApi.getPokemons(offset, limit).then((pokemons = []) => {
