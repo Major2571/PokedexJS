@@ -1,74 +1,74 @@
-div.normal {
+.pokemon-card.normal {
     background: linear-gradient(220deg, rgba(203, 152, 167, 1.0) 0%, rgba(116, 81, 91, 1.0) 100%);
 }
 
-div.grass {
+.pokemon-card.grass {
     background: linear-gradient(220deg, #38f166 0%, #35af54 100%);
 }
 
-div.fire {
+.pokemon-card.fire {
     background: linear-gradient(220deg, rgba(247, 127, 0, 1.0) 0%, rgba(214, 40, 40, 1.0) 100%);
 }
 
-div.water {
+.pokemon-card.water {
     background: linear-gradient(220deg, rgba(134, 168, 252, 1.0) 0%, rgba(21, 82, 226, 1.0) 100%);
 
 }
 
-div.electric {
+.pokemon-card.electric {
     background: linear-gradient(220deg, rgb(255 169 0) 0%, rgb(239 220 32) 100%);
 }
 
-div.ice {
+.pokemon-card.ice {
     background: linear-gradient(220deg, rgb(115 219 241) 0%, rgba(144, 224, 239, 1.0) 100%);
 }
 
-div.ground {
+.pokemon-card.ground {
     background: linear-gradient(220deg, rgba(169, 112, 44, 1.0) 0%, rgba(110, 73, 31, 1.0) 100%);
 }
 
-div.flying {
+.pokemon-card.flying {
     background: linear-gradient(220deg, rgba(193, 138, 255, 1.0) 0%, rgba(233, 69, 255, 1.0) 100%);
 }
 
-div.poison {
+.pokemon-card.poison {
     background: linear-gradient(220deg, rgba(178, 115, 255, 1.0) 0%, rgba(94, 45, 136, 1.0) 100%);
 }
 
-div.fighting {
+.pokemon-card.fighting {
     background: linear-gradient(220deg, rgba(239, 97, 56, 1.0) 0%, rgba(153, 64, 37, 1.0) 100%);
 }
 
-div.psychic {
+.pokemon-card.psychic {
     background: linear-gradient(220deg, rgba(248, 28, 145, 1.0) 0%, rgba(163, 43, 108, 1.0) 100%);
 }
 
-div.dark {
+.pokemon-card.dark {
     background: linear-gradient(220deg, rgba(90, 89, 121, 1.0) 0%, rgba(4, 7, 6, 1.0) 100%);
 }
 
-div.rock {
+.pokemon-card.rock {
     background: linear-gradient(220deg, rgba(139, 62, 33, 1.0) 0%, rgba(72, 24, 11, 1.0) 100%);
 }
 
-div.bug {
+.pokemon-card.bug {
     background: linear-gradient(220deg, rgba(59, 153, 80, 1.0) 0%, rgba(28, 75, 39, 1.0) 100%);
 }
 
-div.ghost {
+.pokemon-card.ghost {
     background: linear-gradient(220deg, #615795 0%, #2b2736 100%);
 }
 
-div.steel {
+.pokemon-card.steel {
     background: linear-gradient(220deg, rgb(222 227 227) 0%, rgb(108 108 108) 100%);
     ;
 }
 
-div.dragon {
+.pokemon-card.dragon {
     background: linear-gradient(220deg, #301c57 0%, #575f9d 100%);
 }
 
-div.fairy {
+.pokemon-card.fairy {
     background: linear-gradient(220deg, rgba(234, 19, 105, 1.0) 0%, rgba(149, 26, 68, 1.0) 100%);
 }
 

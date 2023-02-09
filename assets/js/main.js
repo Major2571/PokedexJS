@@ -5,7 +5,7 @@ let offset = 0;
 let limit = 151;
 
 function convertPokemonToLi(pokemon) {
-    return `<div class="pokemon-card-container">
+    return `<div class="pokemon-card-container ${pokemon.types.map((type) => `${type}`).join(' ')}">
                     <div class="pokemon-card ${pokemon.type}">
         
                         <div class="pokemon-card-bg">
@@ -17,7 +17,7 @@ function convertPokemonToLi(pokemon) {
         
                         <div class="details">
                             <ol class="types">
-                                ${pokemon.types.map((type) => `<li class="type ${type}" data-filter="${type}">${type}</li>`).join('')}
+                                ${pokemon.types.map((type) => `<li class="type ${type}">${type}</li>`).join('')}
                             </ol>
                             <img src="${pokemon.photo}" alt="${pokemon.name}">
                         </div>
@@ -39,3 +39,7 @@ loadMoreButton.addEventListener('click', () => {
     offset += limit
     loadPokemonItens(offset, limit)
 })
+
+
+// Pokemon's abilities map:
+// ${ pokemon.abilities.map((ability) => `<li class="ability ${ability}">${ability}</li>`).join('') }

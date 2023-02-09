@@ -21,7 +21,7 @@ pokeSearch.addEventListener('keyup', e => {
 });
 
 
-function filterProduct(value) {
+function filterPokemonBy(value) {
 
     let buttons = document.querySelectorAll(".button-value");
     
@@ -30,8 +30,8 @@ function filterProduct(value) {
         if (value == 'all') {
             button.classList.remove("inactive");
             button.classList.add("active");
-        }
 
+        }
         else if (value.toUpperCase() == button.innerText.toUpperCase()) {
             button.classList.add("active");
             button.classList.remove("inactive");
@@ -42,14 +42,14 @@ function filterProduct(value) {
         }
     });
 
-    let typePokeSearch = document.querySelectorAll('.pokemon-card');
+    let typePokeSearch = document.querySelectorAll('.pokemon-card-container');
 
     typePokeSearch.forEach(pokemon => {
 
         if (value == "all") {
 
             pokemon.classList.remove("hide");
-            pokemon.parentNode.style.display = '';
+            pokemon.style.display = '';
 
             loadMoreButton.disabled = false;
             loadMoreButton.style.display = 'block';
@@ -59,7 +59,7 @@ function filterProduct(value) {
             if (pokemon.classList.contains(value)) {
 
                 pokemon.classList.remove("hide");
-                pokemon.parentNode.style.display = '';
+                pokemon.style.display = '';
 
                 loadMoreButton.disabled = true;
                 loadMoreButton.style.display = 'none';
@@ -67,7 +67,7 @@ function filterProduct(value) {
             } else {
 
                 pokemon.classList.add("hide");
-                pokemon.parentNode.style.display = 'none';
+                pokemon.style.display = 'none';
 
                 loadMoreButton.disabled = true;
                 loadMoreButton.style.display = 'none';

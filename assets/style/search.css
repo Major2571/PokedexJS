@@ -54,6 +54,7 @@ nav {
     width: 80%;
     padding: 1em;
     text-align: center;
+    transition: all 0.4s ease;
 }
 
 .nav-menu button {
@@ -154,7 +155,7 @@ nav {
         justify-items: stretch;
         background-color: #000000c9;
         text-align: center;
-        transition: 0.3s;
+        transition: all 0.4s ease-in-out;
         overflow: auto;
     }
 

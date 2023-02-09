@@ -6,7 +6,14 @@ hamburger.addEventListener("click", () => {
     navMenu.classList.toggle("active");
 })
 
-document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+document.querySelectorAll(".nav-item").forEach(hideMenu => hideMenu.addEventListener("click", () => {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
 }))
+
+window.addEventListener('click', function (hideMenuClickOutside) {
+    if ( (!hamburger.contains(hideMenuClickOutside.target)) && (!navMenu.contains(hideMenuClickOutside.target)) ) {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+    }
+})
