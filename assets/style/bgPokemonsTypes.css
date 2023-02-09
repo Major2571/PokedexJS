@@ -74,74 +74,117 @@ div.fairy {
 
 
 
-li.normal {
+li.normal, 
+button.normal {
     background-color: rgb(172 138 148);
+    border: 2px solid  rgb(172 138 148);
 }
 
-li.grass {
+li.grass, 
+button.grass {
     background-color: rgba(55, 163, 5, 1.0);
+    border: 2px solid  rgba(55, 163, 5, 1.0);
 }
 
-li.fire {
+li.fire, 
+button.fire {
     background-color: rgba(238, 127, 48, 1.0);
+    border: 2px solid  rgba(238, 127, 48, 1.0);
 }
 
-li.water {
+li.water, 
+button.water {
     background-color: rgba(103, 143, 238, 1.0);
+    border: 2px solid  rgba(103, 143, 238, 1.0);
 }
 
-li.electric {
+li.electric, 
+button.electric {
     background-color: rgb(209 170 11);
+    border: 2px solid  rgb(209 170 11);
 }
 
-li.ice {
+li.ice, 
+button.ice {
     background-color: rgb(91 144 195);
+    border: 2px solid  rgb(91 144 195);
 }
 
-li.ground {
+li.ground, 
+button.ground {
     background-color: rgb(149 121 48);
+    border: 2px solid  rgb(149 121 48);
 }
 
-li.flying {
+li.flying, 
+button.flying {
     background-color: rgb(123 74 255);
+    border: 2px solid  rgb(123 74 255);
 }
 
-li.poison {
+li.poison, 
+button.poison {
     background-color: rgb(153 109 197);
+    border: 2px solid  rgb(153 109 197);
 }
 
-li.fighting {
+li.fighting, 
+button.fighting {
     background-color: rgb(202 113 87);
+    border: 2px solid  rgb(202 113 87);
 }
 
-li.psychic {
+li.psychic, 
+button.psychic {
     background-color: rgb(217 79 153);
+    border: 2px solid  rgb(217 79 153);
 }
 
-li.dark {
+li.dark, 
+button.dark {
     background-color: rgba(114, 88, 71, 1.0);
+    border: 2px solid  rgba(114, 88, 71, 1.0);
 }
 
-li.rock {
+li.rock, 
+button.rock {
     background-color: rgba(184, 161, 55, 1.0);
+    border: 2px solid  rgba(184, 161, 55, 1.0);
 }
 
-li.bug {
+li.bug, 
+button.bug {
     background-color: rgb(85 142 98);
+    border: 2px solid  rgb(85 142 98);
 }
 
-li.ghost {
+li.ghost, 
+button.ghost {
     background-color: rgba(110, 88, 150, 1.0);
+    border: 2px solid  rgba(110, 88, 150, 1.0);
 }
 
-li.steel {
+li.steel, 
+button.steel {
     background-color: rgb(185, 181, 181);
+    border: 2px solid  rgb(185, 181, 181);
 }
 
-li.dragon {
+li.dragon, 
+button.dragon {
     background-color: #7760e2;
+    border: 2px solid  #7760e2;
 }
 
-li.fairy {
+li.fairy, 
+button.fairy {
     background-color: rgb(237 91 147);
+    border: 2px solid  rgb(237 91 147);
 }
+
+button.all {
+    background-color: var(--grey);
+    border: 2px solid var(--grey);
+}
+
+
